@@ -4,7 +4,7 @@ import { getFont } from "../src/mod.ts";
 
 Deno.test("getFont returns default font class", () => {
   const result = getFont();
-  assertEquals(result, { class: "lampung-suarnadipa" });
+  assertEquals(result, { class: "lampung-kaganga" });
 });
 
 Deno.test("getFont returns Lampung Suarnadipa font class", () => {
