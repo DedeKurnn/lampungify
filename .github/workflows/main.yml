@@ -1,7 +1,6 @@
 name: Library Push
 
 on:
-  workflow_dispatch:
   push:
     tags:
       - '*'
