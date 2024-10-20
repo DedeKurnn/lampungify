@@ -2,7 +2,7 @@
 
 <br>
 
-<a  href="https://github.com/DedeKurnn/lampungify"><img  src="/assets/images/logo.png"  alt="Lampungify"  width="200"></a>
+<a  href="https://github.com/DedeKurnn/lampungify"><img  src="./assets/images/logo.png"  alt="Lampungify"  width="200"></a>
 
 <br>
 
@@ -54,27 +54,16 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 ```bash
 
 # Install dependencies via NPM
-
 $  npm  install  lampungify
 
-
-
 # Install dependencies via Yarn
-
 $  yarn  add  lampungify
 
-
-
 # Install via deno
-
-$  deno  add  jsr:lampungify
-
-
+$  deno add jsr:@aksara/lampungify
 
 # Install dependencies via Bun
-
 $  bun  add  lampungify
-
 ```
 
 ## Documentations
