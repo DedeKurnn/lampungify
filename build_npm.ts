@@ -45,11 +45,6 @@ await build({
     bugs: {
       url: "https://github.com/DedeKurnn/lampungify/issues",
     },
-    files: [
-      "./assets/css/styles.css",
-      "./assets/fonts/kaganga.ttf",
-      "./assets/fonts/SuarnadipaLampung.ttf",
-    ],
   },
   postBuild() {
     Deno.copyFileSync("LICENSE", "npm/LICENSE");
