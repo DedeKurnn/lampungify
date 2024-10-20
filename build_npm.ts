@@ -1,11 +1,7 @@
 // ex. scripts/build_npm.ts
 import { build, emptyDir } from "@deno/dnt";
-import { copy } from "jsr:@std/fs";
 
 await emptyDir("./npm");
-
-await copy("assets/css", "npm/assets/css", { overwrite: true });
-await copy("assets/fonts", "npm/assets/fonts", { overwrite: true });
 
 await build({
   entryPoints: ["./src/mod.ts"],

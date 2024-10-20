@@ -36,22 +36,3 @@ export function getLatin(aksara: string) {
 
   return aksara;
 }
-
-/**
- * Returns the font name for a given font.
- *
- * @param {string} name - The name of the font.
- * @returns {string} The font name.
- */
-export function getFont(name: string = "Lampung Kaganga"): {
-  class: string;
-} {
-  if (name === "Lampung Suarnadipa") {
-    return { class: "lampung-suarnadipa" };
-  }
-  if (name === "Lampung Kaganga") {
-    return { class: "lampung-kaganga" };
-  }
-
-  return { class: "lampung-suarnadipa" };
-}

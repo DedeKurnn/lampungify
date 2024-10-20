@@ -35,8 +35,7 @@ Lampungify
 ## Key Features
 
 - **Text Conversion**: Convert any latin script to aksara Lampung or vice versa.
-
-- **Font Management**: Retrieve appropriate CSS classes for Lampung fonts with a simple function.
+  !! IMPORTANT: Current version only works with [Kaganga Font](https://aksaradinusantara.com/fonta/font/Kaganga_21?key=9e4d311c4c09970827bca94ab8d6fe1c)
 
 - **Lightweight**: Designed to be minimal and efficient, ensuring fast performance.
 
@@ -79,22 +78,6 @@ $  bun  add  lampungify
 ```
 
 ## Documentations
-
-### getFont()
-
-```ts
-getFont(name: string =  "Lampung Suarnadipa"): { class: string }
-```
-
-The `getFont` function retrieves the corresponding CSS class for a specified font name. If no font name is provided, it defaults to "Lampung Suarnadipa".
-
-| Parameter | Type   | Default Value     | Description                                                                              |
-| --------- | ------ | ----------------- | ---------------------------------------------------------------------------------------- |
-| `name`    | string | "Lampung Kaganga" | The name of the font. Available options include: "Lampung Suarnadipa", "Lampung Kaganga" |
-
-Returns
-
-An object containing the class name for the specified font.
 
 ### getAksara()
 
