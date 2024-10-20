@@ -18,8 +18,6 @@
   <a href="#license">License</a>
 </p>
 
-![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
-
 ## Key Features
 
 - **Text Conversion**: Convert any latin script to aksara Lampung or vice versa.
@@ -42,7 +40,7 @@ $ npm install lampungify
 $ yarn add lampungify
 
 # Install via deno
-$ deno add jsr:lampungify;
+$ deno add jsr:lampungify
 
 # Install dependencies via Bun
 $ bun add lampungify
