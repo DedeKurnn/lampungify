@@ -10,7 +10,14 @@ await build({
     // see JS docs for overview and more options
     deno: true,
   },
-  test: true,
+  test: false,
+  typeCheck: "both",
+  compilerOptions: {
+    importHelpers: false,
+    sourceMap: true,
+    target: "ES2021",
+    lib: ["ESNext", "DOM", "DOM.Iterable"],
+  },
   package: {
     // package.json properties
     name: "lampungify",
@@ -36,7 +43,6 @@ await build({
     },
   },
   postBuild() {
-    // steps to run after building and before running the tests
     Deno.copyFileSync("LICENSE", "npm/LICENSE");
     Deno.copyFileSync("README.md", "npm/README.md");
   },

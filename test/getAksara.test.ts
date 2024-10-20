@@ -1,4 +1,4 @@
-import { assertEquals } from "@std/assert";
+import { assertEquals } from "jsr:@std/assert";
 import { getAksara } from "../src/mod.ts";
 
 Deno.test("getAksara should return correct aksara for given input", () => {
