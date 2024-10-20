@@ -12,7 +12,7 @@ import { syllabify, getAksaraBySyllables } from "./utils.ts";
  * @returns {string} The converted string in aksara Lampung script.
  */
 
-export function getAksara(latin: string) {
+export function getAksara(latin: string): string {
   const words = latin.split(" ");
 
   const aksaraWords = words.map((word) => {
@@ -31,7 +31,7 @@ export function getAksara(latin: string) {
  * @param {string} aksara - The input string in Aksara Lampung script.
  * @returns {string} The converted string in Latin script.
  */
-export function getLatin(aksara: string) {
+export function getLatin(aksara: string): string {
   // TODO: implement aksara to latin conversion
 
   return aksara;
