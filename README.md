@@ -78,13 +78,13 @@ Receive latin text to be converted to string that compatible with Lampung script
 
 ### getLatin()
 
-Work in progress
+```ts
+getLatin(aksara: string): string
+```
+
+Receive aksara string to be converted to latin text. Returns a string, only compatible with Kaganga supported font.
 
 <br>
-
-## Emailware
-
-Lampungify is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this library or it has helped you in any way, I'd like you send me an email at <dedekurnn@outlook.com> about anything you'd want to say about this software. I'd really appreciate it!
 
 ## Credits
 
