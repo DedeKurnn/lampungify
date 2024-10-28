@@ -1,3 +1,5 @@
+import { regexPatterns } from "./regex.ts";
+
 /**
  * Splits a syllable into parts based on vowel pairs, allowing specified exceptions.
  *
@@ -126,32 +128,6 @@ export const getAksaraBySyllables = (word: string) => {
     .replaceAll("f", "p")
     .replaceAll("x", "ks")
     .replaceAll("z", "j");
-
-  const regexPatterns = {
-    ng: /(ng)[aiueoAIUEO]/g,
-    ny: /(ny)[aiueoAIUEOkKQqgpPfFvVbBmMtTdDcCjJzZyYlLsSwWGHh]/g,
-    gh: /(gh|kh)[aiueoAIUEOkKQqgpPfFvVbBmMtTdDcCjJzZyYlLsSwWGHh]/g,
-    vocal: /^[iIuUeEoO]/,
-    tandabaca: /[,!@.*+?$^/\\;:'"[\]{}()%#^+=_-]/,
-    ang: /[aiueoIUEO](ng)[kKQqgpPfFvVbBmMtTdDcCjJzZyYlLsSwWGHhnr,!@.*+?$^/\\;:'"[\]{}()%#^+=_-]]/g,
-    an: /[aiueoIUEO](n)[kKQqgpPfFvVbBmMtTdDcCjJzZyYlLsSwWGHhnr,!@.*+?$^/\\;:'"[\]{}()%#^+=_-]]/g,
-    ah: /[aiueoIUEO](h)[kKQqgpPfFvVbBmMtTdDcCjJzZyYlLsSwWGHhnr,!@.*+?$^/\\;:'"[\]{}()%#^+=_-]]/g,
-    ar: /[aiueoIUEO](r)[kKQqgpPfFvVbBmMtTdDcCjJzZyYlLsSwWGHhnr,!@.*+?$^/\\;:'"[\]{}()%#^+=_-]]/g,
-    ai: /[aiueoIUEO](i)[kKQqgpPfFvVbBmMtTdDcCjJzZyYlLsSwWGHhnr,!@.*+?$^/\\;:'"[\]{}()%#^+=_-]]/g,
-    au: /[aiueoIUEO](u)[kKQqgpPfFvVbBmMtTdDcCjJzZyYlLsSwWGHhnr,!@.*+?$^/\\;:'"[\]{}()%#^+=_-]]/g,
-    xawal:
-      /[aiueoIUEO][kKQqgpPfFvVbBmMtTdDcCjJzZyYlLsSwWH][kKQqgpPfFvVbBmMtTdDcCjJzZyYlLsSwWH][aiueoIUEO]/g,
-    x: /(?![aeiouAEIOU](R|r|u|n|h|ng|gh|kh|i))[aiueoIUEO]([kKQqgpPfFvVbBmMtTdDcCjJzZyYlLsSwWHnhriu])[,!@.*+?$^/\\;:'"[\]{}()%#^+=_-]?$/g,
-    xng: /[aiueoIUEO]ng$/g,
-    anx: /[aiueoIUEO]n/g,
-    ahx: /[aiueoIUEO]h/g,
-    arx: /[aiueoIUEO]r\b/g,
-    aix: /[aiueoIUEO]i/g,
-    aux: /[aiueoIUEO]u/g,
-    a: /[kKQqgpPfFvVbBmMtTdDcCjJzZyYlLsSwWGHhnr][a]/g,
-    awal: /\b[iIuUeEoOXAR]/g,
-    digraph: /(?<!n|g|y|h)(?!ng|ny|gh|kh)[b-df-hj-np-tv-z]{2}/g,
-  };
 
   // Replace certain consonant with prefix
   const patternPrefix = (aksara: string, pattern: RegExp, prefix: string) => {
