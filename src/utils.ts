@@ -150,8 +150,8 @@ export const getAksaraBySyllables = (word: string) => {
       return aksara.replace(/r/gi, "R");
     }
 
-    if (aksara.match(/Nau/gi)) {
-      return aksara.replace(/au/gi, "W");
+    if (aksara.match(/(Nau|Naw)/gi)) {
+      return aksara.replace(/(au|aw)/gi, "W");
     }
 
     return aksara.replace(pattern, function (a) {
