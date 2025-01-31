@@ -104,6 +104,8 @@ This software uses the following open source packages:
 
 MIT
 
+Special thanks to: Mr. [Meizano Ardhi Muhammad](https://github.com/meizano) for providing base regex for this library. Kindly check out his projects.
+
 ---
 
 > [dedekurnn.my.id](https://www.dedekurnn.my.id) &nbsp;&middot;&nbsp;
