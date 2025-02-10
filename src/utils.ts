@@ -186,7 +186,7 @@ export const getAksaraBySyllables = (word: string) => {
   };
 
   const patternDigraph = (word: string) => {
-    return word.replace(regexPatterns.digraph, (a) => `${a[0]}/${a[1]}`);
+    return word.replace(regexPatterns.digraph, (a) => `${a[0]}M${a[1]}`);
   };
 
   aksara = patternDigraph(aksara);
@@ -209,13 +209,13 @@ export const getAksaraBySyllables = (word: string) => {
   aksara = patternSuffix(aksara, regexPatterns.au, "W");
 
   aksara = aksara.replace(regexPatterns.xawal, function (a) {
-    return a[0] + a[1] + "/" + a[2] + a[3];
+    return a[0] + a[1] + "M" + a[2] + a[3];
   });
 
   aksara = aksara.replace(regexPatterns.x, function (a) {
     return a.search(regexPatterns.tandabaca) != -1
-      ? a.substring(0, a.length - 1) + "/" + a.substring(a.length - 1)
-      : a + "/";
+      ? a.substring(0, a.length - 1) + "M" + a.substring(a.length - 1)
+      : a + "M";
   });
 
   aksara = patternDiacritic(aksara, regexPatterns.xng, "X");
