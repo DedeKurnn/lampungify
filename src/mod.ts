@@ -64,10 +64,10 @@ export function getLatin(aksara: string): string {
   latin = latin.replace(regexAnakHurufMap.ulan_i, function (a) {
     return a.substring(0, a.length - 2) + "i";
   });
-  latin = latin.replace(regexAnakHurufMap.ulan_e, function (a) {
+  latin = latin.replace(regexAnakHurufMap.bicek_e, function (a) {
     return a.substring(0, a.length - 2) + "é";
   }); // Perlu dipertimbangkan alternatif untuk huruf é
-  latin = latin.replace(regexAnakHurufMap.bicek_e, function (a) {
+  latin = latin.replace(regexAnakHurufMap.ulan_e, function (a) {
     return a.substring(0, a.length - 2) + "e";
   });
   latin = latin.replace(regexAnakHurufMap.bitan_o, function (a) {

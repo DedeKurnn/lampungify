@@ -195,7 +195,8 @@ export const getAksaraBySyllables = (word: string) => {
   aksara = aksara.replace(/Q/gi, "k");
 
   // Replace all é with E
-  aksara = aksara.replace(/é/gi, "E");
+  aksara = aksara.replace(/é/gi, "e");
+  aksara = aksara.replace(/e/gi, "E");
 
   aksara = patternPrefix(aksara, regexPatterns.ng, "G");
   aksara = patternPrefix(aksara, regexPatterns.ny, "N");

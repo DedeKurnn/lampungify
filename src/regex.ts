@@ -25,8 +25,8 @@ export const regexIndukHurufMap = {
 export const regexAnakHurufMap = {
   nengen: /a[\/]/g,
   ulan_i: /a[i]/g,
-  ulan_e: /a[E]/g,
-  bicek_e: /a[e]/g,
+  ulan_e: /a[e]/g,
+  bicek_e: /a[E]/g,
   bitan_o: /a[Oo]/g,
   bitan_u: /a[u]/g,
   tekelubang: /X/g,
@@ -40,7 +40,7 @@ export const regexAnakHurufMap = {
 export const regexPatterns = {
   ng: /(ng)[aiueoAIUEO]/g,
   ny: /(ny)[aiueoAIUEOkKQqgpPfFvVbBmMtTdDcCjJzZyYlLsSwWGHh]/g,
-  gh: /(gh|kh)[aiueoAIUEOkKQqgpPfFvVbBmMtTdDcCjJzZyYlLsSwWGHh]/g,
+  gh: /(gh|kh)[aiueoAIUEOkKQqgpPfFvVbBmMtTdDcCjJzZyYlLsSwWGHh]?/g,
   vocal: /^[iIuUeEoO]/,
   tandabaca: /[,!@.*+?$^/\\;:'"[\]{}()%#^+=_-]/,
   ang: /[aiueoIUEO](ng)[kKQqgpPfFvVbBmMtTdDcCjJzZyYlLsSwWGHhnr,!@.*+?$^/\\;:'"[\]{}()%#^+=_-]]/g,
